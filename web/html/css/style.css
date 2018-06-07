@@ -1,3 +1,9 @@
+ *{
+ 	padding: 0px;
+	margin: 0px;
+ }
+
+
  /*Estilos generales*/
  body{
  	background: white;
@@ -61,7 +67,7 @@ header #subheader nav ul li{
 	height: 500px;
 	float: left;
 	background: #040404;
-	margin-bottom: 10px;
+	
 }
 
 /*barra*/
@@ -69,15 +75,16 @@ header #subheader nav ul li{
 	margin: auto;
 	width: 960px;
 	font-family: Arial, Helvetic, Sans-serif;
+
 }
-ul, ol{
+ul, li{
 	list-style: none;
 }
 .nav li a{
 	background-color: #242344;
 	color:#fff;
 	text-decoration:none;
-	padding: 10px 15px;
+	padding: 7px 15.3px;
 	display: block; 
 }
 .nav li a:hover{
@@ -86,3 +93,16 @@ background-color: #F35607;
 .nav > li {
 	float: left;
 }
+.nav li ul {
+	display:none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+#titulo{
+	margin-top: 40px;
+}
+
